@@ -92,6 +92,19 @@ form button:hover{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
     background: #ffffff; /* Match the color with your navbar */
     height: 50px;
@@ -519,61 +532,9 @@ form button:hover{
         }
     }
 
-    /*Services Section CSS */
+    
 
-    .services {
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-    }
 
-    .services h1 {
-        background-color: #0b9208;
-        background-image: linear-gradient(to right,
-         #ff8177 0%,
-         #ff867a 0%,
-         #ff8c7f 21%,
-         #f99185 52%,
-         #cf556c 78%,
-         #b12a5b 100%,
-    );
-    background-size: 100%;
-    margin-bottom: 1rem;
-     font-size: 2rem;
-     -webkit-background-clip: text;
-     -moz-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     -moz-text-fill-color:transparent; 
-    }
-
-  
-
-@media screen and (max-width: 960px){
-    .services{
-        height:1600px;
-    }
-
-    .setvices h1{
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-     @media screen and (max-width:480px) {
-        .services {
-            height: 1400px;
-        }
-
-        .services h1 {
-            font-size: 1.2rem;
-        }
-
-        .services__card {
-            width: 300px;
-        }
-     }   
 
      /*Footer CSS */
      .footer__container{
