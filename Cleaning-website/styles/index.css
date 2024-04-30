@@ -434,7 +434,11 @@
         background: #ffffff;
         max-width: 100%;
     }
-    
+    .problem.header {
+        padding: 40px 40px 20px 40px;
+        background-color: #f8f9fa;
+        text-align: center;
+       }
     .problem__container {
         display: flex;
         justify-content: center;
