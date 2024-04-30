@@ -253,15 +253,16 @@
         
     }
 }
-/* Hero Section Css---------------------------------------------- */
+/* Hero Section Css---------------------------------------- */
 
 
 .main{
-    background-image: url("./images/pic1.avif");
+    background-image: url("/pic3.jpg");
     background-repeat: no-repeat;
+
 }
 
-/* Change the color of the background*/
+/* Change the color of the background */
 .main__container{
     background-color: rgba(32, 32, 32, 0.664);
     width: 100%;
@@ -277,11 +278,11 @@
     color: white;
     letter-spacing: 5px;
     font-size: 3rem;
-
 }
+
 .main__content h1 {
     font-size: 4rem;
-    background-color: transparent;
+    background-color: #000000;
     background-image: linear-gradient(to top,#0b9208 0%,#fcd303 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -292,7 +293,7 @@
 
 .main__content h2 {
     font-size: 4rem;
-    background-color: transparent;
+    background-color: #000000;
     background-image: linear-gradient(to top,#0b9208 0%,#fcd303 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -376,6 +377,7 @@
     width: 80%;
 }
 
+/* Mobile Response*/
 @media screen and (max-width: 768px) {
     .main__container{
         display: grid;
@@ -428,7 +430,7 @@
         }
     }
 
-    /*Services Section CSS----------------------------- */
+    /*Services Section CSS */
 
     .services {
         background: #fff;
@@ -457,93 +459,7 @@
      -moz-text-fill-color:transparent; 
     }
 
-    .services__container{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .services__card{
-        margin: 1rem;
-        height:525px;
-        width: 400px;
-        border-radius: 4px;
-        background-image: linear-gradient(to bottom,
-         rgba(0,0,0,0)0%,
-          rgba(17,17,17,0.6)100%),
-          url('images/pic3.jpg');
-        background-size: cover;
-        position:relative;
-        color: #fff;
-    }
-
-    .services__card:nth-child(2){
-        background-image: linear-gradient(
-            to bottom,
-             rgba(0,0,0,0)0%,
-              rgba(17,17,17,0.6)100%),
-              url('images/pic4.jpg'); 
-    }
-    
-    .services__card:nth-child(3){
-        background-image: linear-gradient(
-            to bottom,
-             rgba(0,0,0,0)0%,
-              rgba(17,17,17,0.6)100%),
-              url('images/pic10.jpg'); 
-    }
-    
-
-    .services__card:nth-child(4){
-        background-image: linear-gradient(
-            to bottom,
-             rgba(0,0,0,0)0%,
-              rgba(17,17,17,0.6)100%),
-              url('images/pic11.jpg'); 
-    }
-
-    .services__card:nth-child(5){
-        background-image: linear-gradient(
-            to bottom,
-             rgba(0,0,0,0)0%,
-              rgba(17,17,17,0.6)100%),
-              url('images/pic12.jpg'); 
-    }
-    
-    
-
-    .services h2{
-        position: absolute;
-        top:350px;
-        left:30px;
-    }
-
-    .services__card p{
-        position: absolute;
-        top: 400px;
-        left: 30px;
-    }
-
-    .services__card button{
-        color: #141414;
-        padding: 10px 20px;
-        border: none;
-        outline: none;
-        border-radius: 4px;
-        background: #0b9208;
-        position: absolute;
-        top: 440px;
-        left: 30px;
-        font-size: 1rem;
-        cursor: pointer;
-    }
-
-
-    .services__card:hover{
-        transform: scale(1.075);
-        transition: 0.2s ease-in;
-        cursor: pointer;
-}
+  
 
 @media screen and (max-width: 960px){
     .services{

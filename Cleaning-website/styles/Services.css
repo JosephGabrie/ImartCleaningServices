@@ -257,7 +257,7 @@
 
 
 .main{
-    background-image: url("./images/pic1.avif");
+    background-image: url("/pic1.avif");
     background-repeat: no-repeat;
 }
 
@@ -471,7 +471,7 @@
         background-image: linear-gradient(to bottom,
          rgba(0,0,0,0)0%,
           rgba(17,17,17,0.6)100%),
-          url('images/pic3.jpg');
+          url('/pic3.jpg');
         background-size: cover;
         position:relative;
         color: #fff;
@@ -482,7 +482,7 @@
             to bottom,
              rgba(0,0,0,0)0%,
               rgba(17,17,17,0.6)100%),
-              url('images/pic4.jpg'); 
+              url('/pic4.jpg'); 
     }
     
     .services__card:nth-child(3){
@@ -490,7 +490,7 @@
             to bottom,
              rgba(0,0,0,0)0%,
               rgba(17,17,17,0.6)100%),
-              url('images/pic10.jpg'); 
+              url('/pic10.jpg'); 
     }
     
 
@@ -499,7 +499,7 @@
             to bottom,
              rgba(0,0,0,0)0%,
               rgba(17,17,17,0.6)100%),
-              url('images/pic11.jpg'); 
+              url('/pic11.jpg'); 
     }
 
     .services__card:nth-child(5){
@@ -507,7 +507,7 @@
             to bottom,
              rgba(0,0,0,0)0%,
               rgba(17,17,17,0.6)100%),
-              url('images/pic12.jpg'); 
+              url('/pic12.jpg'); 
     }
     
     
