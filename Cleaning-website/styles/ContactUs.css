@@ -1,12 +1,114 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
 }
+
+body{
+    display: flex;
+    flex-direction: column; /* Change direction to column */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.contact h2{
+    font-size: 40px;
+    color: #0a9208;
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+.contact form{
+    width: 600px;
+    text-align: center;
+}
+
+form .input__box{
+    display: flex;
+    flex-direction: column; /* Change direction to column */
+}
+
+.form .input__field{
+    width: 100%; /* Set width to 100% */
+}
+
+.field .item{
+    width: 100%;
+    padding:18px;
+    background: transparent;
+    border: 2px solid #0a9208;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #000000; 
+    margin: 12px 0;
+}
+
+.field.error .item{ 
+    border-color: #a00000;
+}
+
+.field .item::placeholder{
+    color: rgb(0, 0, 0)
+}
+
+.field .error-txt{
+    font-size: 14.5px;
+    color: #a00000;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+form .textarea__field .item {
+    resize: none;
+}
+
+form .textarea__field .error-txt{
+    margin-top: 10px;
+}
+
+form button{
+    padding: 12px 32px;
+    background: #0b9208;
+    border:none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0b9208;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+form button:hover{
+    box-shadow: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
     background: #ffffff; /* Match the color with your navbar */
     height: 50px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,6 +162,7 @@
 .navbar{
     background:#ffffff;
     height: 80px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +210,7 @@
 }
 
 .navbar__item{
-    height: 60px;
+    height: 80px;
 }
 
 .navbar__links{
@@ -158,7 +261,7 @@
     .navbar__container {
         display: flex;
         justify-content: space-between;
-        height: 80px;
+        height: 50px;
         z-index: 1;
         width: 100%;
         max-width: 100%;
@@ -193,7 +296,7 @@
     #navbar__logo{
         padding-left: 25px;
     }
-
+/*hamburger*/
     .navbar__toggle .bar{
         width: 25px;
         height: 3px;
@@ -253,11 +356,11 @@
         
     }
 }
-/* Hero Section Css-------------------------------------------------- */
 
 .main{
-    background-image: url(".//images/pic12.jpg");
+    background-image: url("/pic3.jpg");
     background-repeat: no-repeat;
+    width: 100%;
 
 }
 
@@ -281,30 +384,28 @@
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #0b9208;
+    background-color: #000000;
     background-image: linear-gradient(to top,#0b9208 0%,#fcd303 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color:transparent;
-    margin-left: 2rem;
 }
 
 .main__content h2 {
     font-size: 4rem;
-    background-color: #0b9208;
+    background-color: #000000;
     background-image: linear-gradient(to top,#0b9208 0%,#fcd303 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color:transparent;
-    margin-left: 2rem;
 }
 
 .main__content p{
-    margin-left: 5rem;
+    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
     color: #0b9208;
@@ -323,13 +424,12 @@
     position: relative;
     transition: all 0.35s;
     outline: none;
-    margin-left: 2.5rem;
 } 
 
 .main__btn a {
     position: relative;
     z-index: 5;
-    color:#ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -366,9 +466,17 @@
     width:80%;
 }
 
+
+
+
 .main__image--container{
     height: 1800px;
     width: 1800px;
+}
+
+#main__img {
+    height: 80%;
+    width: 80%;
 }
 
 /* Mobile Response*/
@@ -424,181 +532,15 @@
         }
     }
 
-    /* Problem Section-------------------------------------------------------------------------------*/
-    .problem {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 30px 60px;
-        background: #ffffff;
-        max-width: 100%;
-    }
     
-    .problem__container {
-        display: flex;
-        justify-content: center;
-        max-width: 100%;
-    }
-    
-    .problem__text-column,
-    .problem__image-column {
-        flex: 1;
-    }
-    
-    .problem__text h1 {
-        margin-bottom: 200px; /* Increased margin between sentences */
-        text-align: center;
-        color: #000000;
-        align-items: center;
-        justify-self: center;
-        font-family: Quicksand;
-        font-weight: lighter;
-    }
-    
-    .problem__image {
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .problem__image img {
-        max-width: 100%; /* Adjust image size while maintaining aspect ratio */
-        height: auto;
-        border-radius: 50%;
-        border: (3px) solid #0a9208;
-    }
-    
-    @media screen and (min-width: 768px) {
-        .problem__container {
-            flex-direction: row;
-        }
-    
-        .problem__text-column,
-        .problem__image-column {
-            flex: 1;
-        }
-    }
-     
-    /*Services Section CSS------------------------------------------------- */
-
-    .services {
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .services h1 {
-        background-color: #0b9208;
-        background-image: linear-gradient(to right,
-         #ff8177 15%,
-         #ff867a 17%,
-         #ff8c7f 21%,
-         #f99185 52%,
-         #cf556c 78%,
-         #b12a5b 100%,
-    );
-    background-size: 100%;
-
-    margin-bottom: 3rem;
-     font-size: 4rem;
-     -webkit-background-clip: text;
-     -moz-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     -moz-text-fill-color:transparent; 
-    }
-
-    .services__container{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .services__card{
-        margin: 1rem;
-        height:525px;
-        width: 400px;
-        border-radius: 4px;
-        background-image: linear-gradient(to bottom,
-         rgba(0,0,0,0)0%,
-          rgba(17,17,17,0.6)100%),
-          url('/images/pic3.jpg');
-        background-size: cover;
-        position:relative;
-        color: #fff;
-    }
-
-    .services__card:nth-child(2){
-        background-image: linear-gradient(
-            to bottom,
-             rgba(0,0,0,0)0%,
-              rgba(17,17,17,0.6)100%),
-              url('/images/pic4.jpg'); 
-    }
-
-    .services h2{
-        position: absolute;
-        top:350px;
-        left:30px;
-    }
-
-    .services__card p{
-        position: absolute;
-        top: 400px;
-        left: 30px;
-    }
-
-    .services__card button{
-        color: #141414;
-        padding: 10px 20px;
-        border: none;
-        outline: none;
-        border-radius: 4px;
-        background: #0b9208;
-        position: absolute;
-        top: 440px;
-        left: 30px;
-        font-size: 1rem;
-        cursor: pointer;
-    }
 
 
-    .services__card:hover{
-        transform: scale(1.075);
-        transition: 0.2s ease-in;
-        cursor: pointer;
-}
-
-@media screen and (max-width: 960px){
-    .services{
-        height:1600px;
-    }
-
-    .setvices h1{
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-     @media screen and (max-width:480px) {
-        .services {
-            height: 1400px;
-        }
-
-        .services h1 {
-            font-size: 1.2rem;
-        }
-
-        .services__card {
-            width: 300px;
-        }
-     }   
 
      /*Footer CSS */
      .footer__container{
-        background-color: #eeeeee;
-        padding: 5rem 0 ;
+        background-color: #fbfbfb;
+        width: 100%;
+        padding: 5rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -722,7 +664,7 @@
      @media screens and (max-width:488px){
         .footer__links{
             margin: 0;
-            padding: 5px;
+            padding: 10px;
             width: 100%;
         }
      }

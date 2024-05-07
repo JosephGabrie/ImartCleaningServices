@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nextWebsite</title>
+  <link rel="stylesheet" href="styles/index.css" rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1ec30ce5ca.js" crossorigin="anonymous"> </script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <!-- header section-->
+  <nav class="header">
+    <div class="header__container">
+      <div class="header__info">
+        <a href="mailto:lipsum@gmail.com"><i class="fas fa-envelope"></i> lipsum@gmail.com</a>
+        <span class="bar"> | </span>
+        <a href="tel:"><i class="fas fa-phone"></i> 555-555-5555</a>
+        <span class="bar"> | </span>
+        <a><i class="far fa-clock"></i> 9:00am-5:00pm</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section-->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>Life can be messy</h1>
+        <h2>but your home doesn't have to</h2>
+        <p>One less thing to worry about.</p>
+        <button class="main__btn"><a href="/">Free consulation</a></button>
+      </div>
+      <div class="main__img--container">
+      </div>
+    </div>
+  </div>
+
+  <div class="problem header">
+    <h1>why choose us?</h1>
+    <p>We Operate in New Orleans</p>
+  </div>
+
+  <!-- Problem/Solution-->
+  <div class="problem">
+    <div class="problem__container">
+      <div class="problem__text-column">
+        <div class="problem__text">
+          <h1>Are you having a busy week?</h1>
+        </div>
+        <div class="problem__text">
+          <h1>Does your home need a deep clean?</h1>
+        </div>
+      </div>
+      <div class="problem__image-column">
+        <div class="problem__image">
+          <img src="public/pic3.jpg" alt="Problem Image">
+        </div>
+      </div>
+      <div class="problem__text-column">
+        <div class="problem__text">
+          <h1>Do you need to impress someone?</h1>
+        </div>
+        <div class="problem__text">
+          <h1>But you are expecting people to come over?</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services">
+    <h1>See our services</h1>
+    <div class="services__container">
+      <div class="services__card">
+        <h2>Services</h2>
+        <p>Find out how we can clean your home</p>
+        <button>Click me</button>
+      </div>
+      <div class="services__card">
+        <h2>About Us</h2>
+        <p>Learn more about us</p>
+        <button>Click me</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="footer-placeholder"></div>
+
+
+  <script>
+      fetch('footer.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('footer-placeholder').innerHTML = html;
+          })
+          .catch(error => console.error('Error loading the footer:', error));
+  </script>
+  
+</body>
+
+</html>
