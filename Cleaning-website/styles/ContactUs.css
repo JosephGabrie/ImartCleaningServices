@@ -16,7 +16,7 @@ body{
 
 .contact h2{
     font-size: 40px;
-    color: #0a9208;
+    color: #588157;
     text-align:center;
     margin-bottom: 10px;
 }
@@ -39,7 +39,7 @@ form .input__box{
     width: 100%;
     padding:18px;
     background: transparent;
-    border: 2px solid #0a9208;
+    border: 2px solid #588157;
     outline: none;
     border-radius: 6px;
     font-size: 16px;
@@ -73,11 +73,11 @@ form .textarea__field .error-txt{
 
 form button{
     padding: 12px 32px;
-    background: #0b9208;
+    background: #588157;
     border:none;
     outline: none;
     border-radius: 6px;
-    box-shadow: 0 0 10px #0b9208;
+    box-shadow: 0 0 10px #588157;
     font-size: 16px;
     color: #333;
     letter-spacing: 1px;
@@ -128,13 +128,13 @@ form button:hover{
 }
 
 .header__info a {
-    color: #0b9208;
+    color: #588157;
     text-decoration: none;
     margin-right: 10px;
 }
 
 .header__info a:hover {
-    color: #0b9208;
+    color: #588157;
 }
 
 .bar {
@@ -185,7 +185,7 @@ form button:hover{
 
 #navbar__logo{
     background-color: #000000;
-    background-image: linear-gradient(to top,#0b9208 0%,#39fc03 100%);
+    background-image: linear-gradient(to top,#588157 0%,#588157 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -248,12 +248,12 @@ form button:hover{
 }
 
 .button:hover{
-    background: #0b9208;
+    background: #588157;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color :#0b9208;
+    color :#588157;
     transition: all 0.3s ease;
 }
 
@@ -279,7 +279,7 @@ form button:hover{
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background-color: #087601;
+        background-color: #588157;
 
     }
 
@@ -302,7 +302,7 @@ form button:hover{
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #0b9208;
+        background: #588157;
     }
 
     .navbar__item{
@@ -385,7 +385,7 @@ form button:hover{
 .main__content h1 {
     font-size: 4rem;
     background-color: #000000;
-    background-image: linear-gradient(to top,#0b9208 0%,#fcd303 100%);
+    background-image: linear-gradient(to top,#DAD7CD 0%,#DAD7CD 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -396,7 +396,7 @@ form button:hover{
 .main__content h2 {
     font-size: 4rem;
     background-color: #000000;
-    background-image: linear-gradient(to top,#0b9208 0%,#fcd303 100%);
+    background-image: linear-gradient(to top,#DAD7CD 0%,#DAD7CD 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -408,13 +408,13 @@ form button:hover{
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color: #0b9208;
+    color: #DAD7CD;
 
 }
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top,#0b9208 0%,#fcd303 100%);
+    background-image: linear-gradient(to top,#588157 0%,#588157 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -440,14 +440,14 @@ form button:hover{
     left: 2;
     width: 3;
     height: 100%;
-    background: #0b9208;
+    background: #588157;
     transition: all 0.5s;
     border-radius: 4px;
 }
 
 .main__btn:hover{
     color:#fff;
-    background: #0b9208;
+    background: #3A5A40;
         transition: all 0.5s;
 
 
@@ -534,137 +534,3 @@ form button:hover{
 
     
 
-
-
-     /*Footer CSS */
-     .footer__container{
-        background-color: #fbfbfb;
-        width: 100%;
-        padding: 5rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-     }
-
-     #footer__logo{
-        color: #141414;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 2rem;
-     }
-
-     .footer__links{
-        width: 100%;
-        max-width: 1000px;
-        display: flex;
-        justify-content: center;
-     }
-
-     .footer__link--wrapper{
-        display: flex;
-     }
-
-     .footer__link--items{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin:16px;
-        text-align: left;
-        width: 160px;
-        box-sizing: border-box;
-     }
-
-     .footer__link--items h2{
-        margin-bottom: 16px;
-     }
-
-     .footer__link--items > h2 {
-        color: #0b9208;
-     }
-
-     .footer__link--items a {
-        color: #141414;
-        text-decoration: none;
-        margin-bottom: 0.5rem;
-     }
-
-     .footer__link--items a:hover{
-        color:#141414;
-        transition: 0.3s ease-out;
-     }
-
-     /*social Icons*/
-
-     .social__icon--link {
-        color: #141414;
-        font-size:24px;
-     }
-
-     .social__media{
-        max-width: 1000;
-        width :100%;
-     }
-
-     .social__media--wrap{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        max-width: 1000px;
-        margin: 40px auto 0 auto;
-     }
-
-     .social__icons{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 240px;
-     }
-
-     .social__logo{
-        color:#141414;
-        justify-self: flex-start;
-        margin-left:20px;
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 2rem;
-        align-items: center;
-        margin: bottom 16px;
-     }
-
-     .website__rights{
-        color: #141414;
-     }
-
-     @media screen and (max-width: 820px){
-        .footer__links{
-            padding-top: 2rem;
-        }
-
-        #footer__logo{
-            margin-bottom: 2rem;
-        }
-
-        .website__rights{
-            margin-bottom:  2rem;
-        }
-
-        .footer__link--wrapper{
-            flex-direction: column;
-        }
-
-        .social__media--wrap{
-            flex-direction: column;
-        }
-     }
-
-     @media screens and (max-width:488px){
-        .footer__links{
-            margin: 0;
-            padding: 10px;
-            width: 100%;
-        }
-     }
