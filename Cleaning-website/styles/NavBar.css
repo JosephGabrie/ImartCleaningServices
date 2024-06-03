@@ -1,0 +1,11 @@
+/* Define green color palette */
+:root {
+    --primary-green: #4CAF50; /* A fresh and vibrant green */
+    --dark-green: #388E3C; /* A darker shade for contrast on hover/active */
+}
+
+/* Apply neutral colors to the navbar background */
+.navbar {
+    background-color: #f8f9fa; /* Light gray or white for the background */
+    color: var(--primary-green); /* Green text color for general navbar text */
+}
