@@ -269,11 +269,11 @@
 }
 /* Hero Section Css-------------------------------------------------- */
 
-.main{
-    background-image: url("/pic12.jpg");
+.main {
+    background-image: url("/dist/pic12.jpg");
     background-repeat: no-repeat;
-
 }
+
 
 /* Change the color of the background */
 .main__container{
