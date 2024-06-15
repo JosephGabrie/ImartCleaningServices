@@ -1,0 +1,7 @@
+[build]
+  base = "Cleaning-website"
+  command = "npm run build"
+  publish = "Cleaning-website/dist"
+
+[context.production.environment]
+  NODE_ENV = "production"
