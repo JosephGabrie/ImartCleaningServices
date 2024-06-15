@@ -1,3 +1,5 @@
+/* styles/NavBar.css */
+
 /* Define green color palette */
 :root {
     --primary-green: #4CAF50; /* A fresh and vibrant green */
@@ -8,4 +10,30 @@
 .navbar {
     background-color: #f8f9fa; /* Light gray or white for the background */
     color: var(--primary-green); /* Green text color for general navbar text */
+}
+
+/* Style for the expanded menu */
+.navbar-collapse {
+    background-color: white; /* White background for the expanded menu */
+    padding: 10px; /* Add padding if needed */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Style for the toggler icon */
+.navbar-toggler {
+    border-color: var(--primary-green); /* Green border color for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(76, 175, 80, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Nav item styles */
+.nav-item .nav-link {
+    color: var(--primary-green); /* Green text color for links */
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+    color: var(--dark-green); /* Darker green on hover/focus */
 }
