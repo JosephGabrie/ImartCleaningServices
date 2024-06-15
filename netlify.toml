@@ -1,7 +1,7 @@
 [build]
   base = "Cleaning-website"
-  command = "npm install"
-  publish = "Cleaning-website/dist"
+  command = "npm run build"
+  publish = "dist"
 
 [context.production.environment]
   NODE_VERSION = "18"
