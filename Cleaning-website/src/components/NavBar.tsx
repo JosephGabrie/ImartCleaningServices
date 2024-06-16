@@ -1,4 +1,5 @@
-/* src/components/NavBar.tsx 
+
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/NavBar.css'; // Corrected import path
@@ -39,5 +40,4 @@ function NavBar() {
     );
 }
 
-export default NavBar;.
-*/
+export default NavBar;
